@@ -72,6 +72,9 @@ class Ui_Dialog(object):
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        
+    def press_it(self, pressed):
+        self.label.setText(pressed) 
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
