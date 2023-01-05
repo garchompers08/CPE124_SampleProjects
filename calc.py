@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'gui_calc.ui'
 #
@@ -71,9 +71,20 @@ class Ui_Dialog(object):
         self.equalsButton.setObjectName("equalsButton")
 
         self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)   
 
-    def retranslateUi(self, Dialog):
+    def press_it(self, pressed):
+	    if pressed == "C":
+		    self.outputLabel.setText("0")
+            
+	    else:
+		    #Check to see if it starts with 0 and delete 0
+		    if self.outputLabel.text() == "0":
+			    self.outputLabel.setText("")
+		    #Concatenate the pressed button with what was there already
+		    self.outputLabel.setText(f'{self.outputLabel.text()}{pressed}')
+
+def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.addButton.setText(_translate("Dialog", "+"))
