@@ -1,7 +1,12 @@
 # CPE124_SampleProjects
-Sample PRojects includes:
+Sample Projects includes:
 
 Simple calculator
 
 Group Members:
 
+Apilado
+Batacan
+Dayrit
+Narvaez
+Yango
